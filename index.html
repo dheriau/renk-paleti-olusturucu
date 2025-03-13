@@ -6,6 +6,7 @@
     <title>Renk Paleti Oluşturucu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Renk kutusu stil tanımları */
         .color-box {
             position: relative;
             display: flex;
@@ -15,6 +16,7 @@
             font-weight: bold;
             cursor: pointer;
         }
+        /* Kopyalandı bildirimi stil tanımları */
         .copy-notification {
             position: fixed;
             top: 0;
@@ -33,15 +35,19 @@
         <h1 class="mb-4">Renk Paleti Oluşturucu</h1>
         <div class="row justify-content-center mb-3">
             <div class="col-auto">
+                <!-- Renk seçici -->
                 <input type="color" id="colorPicker" class="form-control form-control-color" title="Renk seç">
             </div>
         </div>
         <div class="row justify-content-center mb-4">
             <div class="col-auto">
+                <!-- Renk paleti oluşturma butonu -->
                 <button class="btn btn-primary" onclick="createPalette()">Renk Paleti Oluştur</button>
             </div>
         </div>
+        <!-- Renk paleti kutuları -->
         <div id="palette" class="row justify-content-center"></div>
+        <!-- Kopyalandı bildirimi -->
         <div id="copyNotification" class="copy-notification">Kopyalandı!</div>
     </div>
 
